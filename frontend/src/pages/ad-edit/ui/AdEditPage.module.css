@@ -1,0 +1,15 @@
+.layout {
+  padding: var(--padding-middle);
+  background-color: var(--color-white);
+  min-height: 100vh;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 133%;
+  color: var(--color-black);
+  opacity: 0.85;
+  margin: 0 0 18px;
+}

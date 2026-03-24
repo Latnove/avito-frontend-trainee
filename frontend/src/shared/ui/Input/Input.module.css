@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper:global(.ant-input-affix-wrapper) {
+  height: 32px;
+}
+
+.wrapper input[type='number'] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.wrapper input[type='number']::-webkit-inner-spin-button,
+.wrapper input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.wrapper :global(.ant-input) {
+  border: 1px solid var(--color-gray);
+  border-radius: var(--color-red);
+  padding: 4px 12px;
+  background: var(--color-white);
+}
+
+.wrapper :global(.ant-input:hover) {
+  border-color: var(--color-blue);
+}
+
+.wrapper :global(.ant-input:focus) {
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-blue) 20%, transparent);
+}
+
+.wrapper :global(.ant-input-suffix) svg {
+  fill: rgb(var(--color-black)) !important;
+  opacity: 0.25;
+}
+
+.wrapper :global(.ant-input-suffix:hover) svg {
+  fill: var(--color-blue) !important;
+  opacity: 0.4;
+}
+
+.wrapper :global(.ant-input-clear-icon) {
+  color: var(--color-gray);
+  font-size: 14px;
+}
+
+.error:global(.ant-input-affix-wrapper),
+.error:global(.ant-input-affix-wrapper:hover),
+.error:global(.ant-input-affix-wrapper-focused) {
+  border-color: var(--color-red) !important;
+  box-shadow: none !important;
+}
+
+.warning:global(.ant-input-affix-wrapper),
+.warning:global(.ant-input-affix-wrapper:hover),
+.warning:global(.ant-input-affix-wrapper-focused) {
+  border-color: var(--color-orange) !important;
+  box-shadow: none !important;
+}
+
+.errorText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: var(--color-red);
+  margin-top: 8px;
+}

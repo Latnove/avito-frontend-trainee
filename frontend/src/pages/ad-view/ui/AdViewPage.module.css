@@ -1,0 +1,34 @@
+.spin {
+  color: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layout {
+  padding: var(--padding-middle);
+  background-color: var(--color-white);
+  min-height: 100vh;
+}
+
+.header {
+  background-color: var(--color-white);
+  padding: 0;
+  margin-bottom: 32px;
+  height: fit-content;
+}
+
+.headerContent {
+  position: relative;
+}
+
+.headerContent::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f0f0f0;
+}

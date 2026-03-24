@@ -1,0 +1,77 @@
+.wrapper {
+  width: 100%;
+}
+
+.wrapper :global(.ant-collapse) {
+  border: none;
+  background: transparent;
+}
+
+.wrapper :global(.ant-collapse-title) {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.wrapper :global(.ant-collapse-body) {
+  padding: 0 !important;
+}
+
+.wrapper :global(.ant-collapse-item) {
+  border: none;
+}
+
+.wrapper :global(.ant-checkbox-label) {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.wrapper :global(.ant-collapse-header) {
+  display: flex;
+  align-items: center;
+  padding: 0 !important;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: rgba(0, 0, 0, 0.88);
+  padding-bottom: 8px !important;
+}
+
+.wrapper :global(.ant-collapse-header-text) {
+  order: 1;
+}
+
+.wrapper :global(.ant-collapse-expand-icon) {
+  order: 2;
+  margin-left: auto;
+  transform: rotate(180deg, 0, 180deg) !important;
+}
+
+.wrapper :global(.ant-collapse-content) {
+  border: none;
+}
+
+.wrapper :global(.ant-collapse-content-box) {
+  padding: 12px 0 0 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list :global(.ant-checkbox-wrapper) {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: rgba(0, 0, 0, 0.88);
+}

@@ -1,0 +1,24 @@
+.container {
+  padding: 12px;
+  width: 100%;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: var(--border-radius);
+}
+
+.params {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search,
+.params {
+  height: 32px;
+}
+
+.search {
+  flex: 1;
+}

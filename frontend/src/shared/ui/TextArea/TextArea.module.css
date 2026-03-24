@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wrapper {
+  padding: 8px 16px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: rgba(var(--color-black), 0.85);
+  font-size: 14px;
+}
+
+.wrapper :global(.ant-input-data-count) {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  text-align: right;
+  color: rgb(var(--color-black));
+  opacity: 0.25;
+}
+
+.error:global(.ant-input-textarea-affix-wrapper),
+.error:global(.ant-input-textarea-affix-wrapper:hover),
+.error:global(.ant-input-textarea-affix-wrapper) {
+  border-color: var(--color-red) !important;
+  box-shadow: none !important;
+}
+
+.error :global(.ant-input-data-count) {
+  color: var(--color-red) !important;
+}
+
+.warning:global(.ant-input-textarea-affix-wrapper),
+.warning:global(.ant-input-textarea-affix-wrapper:hover),
+.warning:global(.ant-input-textarea-affix-wrapper),
+.error:global(.ant-input-data-count) {
+  border-color: var(--color-orange) !important;
+  box-shadow: none !important;
+}
+
+.errorText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: var(--color-red);
+  margin-top: 8px;
+}

@@ -1,0 +1,40 @@
+.button {
+  border-radius: var(--border-radius);
+  padding: 8px 12px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  border: none;
+  outline: none;
+}
+
+.button svg {
+  transition: all 0.3s;
+}
+
+.isPrimary {
+  border: 1px solid var(--color-blue);
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.isPrimary:hover {
+  border-color: var(--color-blue) !important;
+  color: var(--color-blue) !important;
+}
+
+.isPrimary:hover svg {
+  fill: var(--color-blue) !important;
+}
+
+.isSecondary {
+  border: 1px solid #d9d9d9;
+  color: #5a5a5a;
+  background-color: #d9d9d9;
+}
+
+.isSecondary:hover {
+  border-color: #d9d9d9 !important;
+  color: rgb(var(--color-black)) !important;
+}

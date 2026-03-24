@@ -1,0 +1,20 @@
+.badge {
+  border-radius: var(--border-radius);
+  padding: 2px 8px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: var(--color-light-orange);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: var(--color-orange);
+}
+
+.dot {
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-orange);
+}

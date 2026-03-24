@@ -1,0 +1,43 @@
+.layout {
+  display: flex;
+  position: relative;
+  height: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background-color: var(--color-light-gray);
+}
+
+.layout::after {
+  content: '';
+  width: 2px;
+  height: calc(100% - 4px);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-white);
+  border-radius: 5px;
+}
+
+.button {
+  flex: 1;
+  height: 100%;
+  padding: 7px 8px;
+  border: none !important;
+  outline: none !important;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--color-light-gray);
+}
+
+.svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--color-black);
+}
+
+.button:hover .svg,
+.button.active .svg {
+  fill: var(--color-blue);
+}

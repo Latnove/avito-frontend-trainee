@@ -1,0 +1,66 @@
+.wrapper {
+  display: flex;
+  justify-content: left;
+  margin-top: auto;
+}
+
+.wrapper :global(.ant-pagination-item),
+.wrapper :global(.ant-pagination-prev),
+.wrapper :global(.ant-pagination-next) {
+  min-width: 32px;
+  height: 32px;
+
+  border-radius: var(--border-radius);
+  border: 1px solid #d9d9d9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-white);
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.wrapper :global(.ant-pagination-item a) {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  text-align: center;
+  color: rgba(var(--color-black), 0.85);
+}
+
+.wrapper :global(.ant-pagination-item-active) {
+  border: 1px solid var(--color-blue);
+  background: var(--color-white);
+}
+
+.wrapper :global(.ant-pagination-item-active a) {
+  color: var(--color-blue);
+  font-weight: 500;
+}
+
+.wrapper :global(.ant-pagination-item:hover),
+.wrapper :global(.ant-pagination-prev:hover),
+.wrapper :global(.ant-pagination-next:hover) {
+  border-color: var(--color-blue);
+  color: var(--color-blue);
+  background-color: var(--color-white) !important;
+}
+
+.wrapper :global(.ant-pagination-prev .ant-pagination-item-link),
+.wrapper :global(.ant-pagination-next .ant-pagination-item-link) {
+  background: transparent;
+  border: none;
+}
+
+.wrapper :global(.ant-pagination-disabled) {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.wrapper :global(.ant-pagination) {
+  display: flex;
+  gap: 8px !important;
+}

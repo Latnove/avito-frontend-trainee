@@ -1,0 +1,41 @@
+.wrapper :global(.ant-select-selector) {
+  border: 1px solid var(--color-gray);
+  border-radius: var(--border-radius);
+  padding: 4px 12px;
+  height: 32px;
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+}
+
+.wrapper:global(.ant-select-focused) :global(.ant-select-selector) {
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-blue) 20%, transparent);
+}
+
+.wrapper :global(.ant-select-selection-item) {
+  line-height: 24px;
+}
+
+.wrapper :global(.ant-select-arrow) {
+  right: 10px;
+}
+
+.error:global(.ant-select) {
+  border-color: var(--color-red) !important;
+  box-shadow: none !important;
+}
+
+.warning:global(.ant-select) {
+  border-color: var(--color-orange) !important;
+  box-shadow: none !important;
+}
+
+.errorText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 167%;
+  color: var(--color-red);
+  margin-top: 8px;
+}

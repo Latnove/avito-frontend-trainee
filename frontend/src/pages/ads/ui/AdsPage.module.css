@@ -1,0 +1,63 @@
+.layout {
+  padding: 0 var(--padding-middle);
+}
+
+.header {
+  margin-bottom: var(--margin-middle);
+  padding: 24px 0 0;
+  background: none;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 127%;
+  color: var(--color-black);
+  opacity: 0.85;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--color-gray);
+  margin-bottom: var(--margin-middle);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.sider {
+  background-color: initial !important;
+  position: relative;
+}
+
+.filter {
+  top: 24px;
+  position: sticky;
+}
+
+.list {
+  flex: 1;
+}
+
+.content {
+  gap: 24px;
+}
+
+.adsSpinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  flex: 1;
+}
+
+.spin {
+  color: var(--color-blue);
+}

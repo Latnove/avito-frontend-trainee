@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 32px;
+}
+
+.headerTop,
+.headerBottom {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.title {
+  flex: 1;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 133%;
+  color: rgba(var(--color-black), 0.85);
+  padding: 0;
+  margin: 0;
+}
+
+.price {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 133%;
+  color: rgba(var(--color-black), 0.85);
+  padding: 0;
+  margin: 0;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.svg {
+  width: 18px;
+  height: 18px;
+}
+
+.adInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 4px;
+}
+
+.adInfo .text {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+  color: var(--color-gray);
+}

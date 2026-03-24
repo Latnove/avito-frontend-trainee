@@ -1,0 +1,30 @@
+.container,
+.containerLong {
+  display: grid;
+  gap: 12px;
+}
+
+.container {
+  grid-template-columns: repeat(5, minmax(180px, 1fr));
+  grid-template-rows: repeat(2, auto);
+}
+
+.containerLong {
+  grid-template-columns: 1;
+  grid-template-rows: repeat(4, auto);
+}
+
+.item {
+  height: 100%;
+  width: 100%;
+  color: initial;
+}
+
+.item:hover {
+  color: var(--color-blue);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+}

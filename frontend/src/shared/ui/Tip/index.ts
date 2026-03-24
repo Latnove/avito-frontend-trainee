@@ -1,0 +1,1 @@
+export { TipWithIcon } from './TipWithIcon'

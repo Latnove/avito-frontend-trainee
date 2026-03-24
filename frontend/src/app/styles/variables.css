@@ -1,0 +1,20 @@
+:root {
+  --bg-color: #f7f5f8;
+  --color-black: 0, 0, 0;
+  --color-gray: #848388;
+  --color-light-gray: #f6f6f8;
+  --color-gray-line: #f0f0f0;
+  --color-white: #fff;
+  --color-blue: #1890ff;
+  --color-light-orange: #f9f1e6;
+  --color-orange: #faad14;
+  --color-red: #ff4d4f;
+  --color-light-red: #fff1f0;
+  --color-green: #b7eb8f;
+  --color-light-green: #f6ffed;
+  --margin-middle: 16px;
+  --padding-middle: 32px;
+  --font-family: 'Roboto';
+  --second-family: 'Roboto';
+  --border-radius: 8px;
+}
