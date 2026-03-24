@@ -4,6 +4,10 @@ import { AdsPage } from '@/pages/ads'
 
 export const routes = [
   {
+    path: '/',
+    element: <h1>Пожалуйста, перейдите по /ads</h1>,
+  },
+  {
     path: '/ads',
     element: <AdsPage />,
   },
