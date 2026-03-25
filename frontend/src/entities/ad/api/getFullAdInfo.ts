@@ -8,7 +8,7 @@ export const getFullAdInfo = async (id: string) => {
     throw new Error('Ad not Found')
   }
 
-  // так как приходит он в виде строки и
+  // так как приходит он в виде строки
   if (
     data.params &&
     'yearOfManufacture' in data.params &&
