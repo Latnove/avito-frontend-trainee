@@ -48,6 +48,7 @@ export const Select = <T extends FieldValues>({
           <>
             <AntdSelect
               {...field}
+              defaultValue={undefined}
               className={clsx(
                 styles.wrapper,
                 className,

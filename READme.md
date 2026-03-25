@@ -2,6 +2,20 @@
 
 ## захардкодил карточки (переход), так как не приходит id с сервера
 
+## ошибка со стороны ответа сервера yearOfManufacture:
+
+приходит ответ в виде строки "yearOfManufacture":"2009", хотя в тз задачи четко описан тип:
+type AutoItemParams = {
+brand?: string;
+model?: string;
+yearOfManufacture?: number;
+transmission?: 'automatic' | 'manual';
+mileage?: number;
+enginePower?: number;
+};
+
+ИСПРАВЛЕНА принудительным приведением типа при получении данных в getFullAdInfo.ts
+
 ## LLM настройки:
 
 1. Установите Ollama
