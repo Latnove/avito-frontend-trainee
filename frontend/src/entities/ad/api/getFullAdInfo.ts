@@ -8,6 +8,7 @@ export const getFullAdInfo = async (id: string) => {
     throw new Error('Ad not Found')
   }
 
+  // CR: понадобилось время, чтобы осознать комментарий, лучше "приводим yearOfManufacture к числу, так как он приходит в виде строки"
   // так как приходит он в виде строки
   if (
     data.params &&

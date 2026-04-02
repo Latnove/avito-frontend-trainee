@@ -50,6 +50,7 @@ export interface ItemsGetOut {
 }
 
 export type GetFullAdResponse = Ad & {
+  // CR: Ad уже содержит поле needsRevision
   needsRevision: boolean
 }
 

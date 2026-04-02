@@ -1,7 +1,9 @@
 import { getAds } from '@/entities/ad'
+// CR: entity не должен зависеть от feature
 import { useAdsStore } from '@/features/ads-list'
 import { useQuery } from '@tanstack/react-query'
 
+// CR: useAdsQuery следует перенести в слой features/ads-list, так как он зависит от стора этого feature, или принимать параметры фильтрации аргументами
 export const useAdsQuery = () => {
   const q = useAdsStore((s) => s.q)
   const categories = useAdsStore((s) => s.categories)

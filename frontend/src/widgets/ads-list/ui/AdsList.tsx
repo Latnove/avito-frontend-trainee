@@ -15,8 +15,11 @@ export const AdsList = ({ className, ads }: IAdsList) => {
   return (
     <div className={clsx(isShort ? styles.container : styles.containerLong, className)}>
       {/* because server not send us id of ads */}
-      {ads.map((ad) => (
-        <Link to={`/ads/${1}`} key={Math.random()} className={styles.item}>
+      {ads.map((ad, index) => (
+          // CR: Math.random() генерирует новый ключ при каждом рендере, React будет полностью пересоздавать DOM для каждого элемента списка
+          // нужно использовать стабильный key
+          // id элемента можно генерировать на уровне получения данных с помощью uuid/Date.now/window.crypto.randomUUID()
+        <Link to={`/ads/${index}`} key={`${ad.title}-${ad.price}-${index}`} className={styles.item}>
           <AdCard ad={ad} className={styles.card} isShortCard={isShort} />
         </Link>
       ))}

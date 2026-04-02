@@ -22,9 +22,11 @@ const sortValues = {
 } as const
 
 export const SortAdsSelect = () => {
-  const setSort = useAdsStore((s) => s.setSort)
-  const sortColumn = useAdsStore((s) => s.sortColumn)
-  const sortDirection = useAdsStore((s) => s.sortDirection)
+  const { setSort, sortColumn, sortDirection } = useAdsStore((s) => ({
+    setSort: s.setSort,
+    sortColumn: s.sortColumn,
+    sortDirection: s.sortDirection,
+  }))
 
   const currentValue = (Object.entries(sortValues).find(
     ([, value]) => sortColumn === value.sortColumn && sortDirection === value.sortDirection,

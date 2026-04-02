@@ -7,9 +7,10 @@ import styles from './AdEditPage.module.css'
 export const AdEditPage = () => {
   const { id } = useParams()
 
-  if (!id) return 'Error id not Found'
+  // CR: React требует, чтобы хуки вызывались безусловно и в одном и том же порядке
+  const { data: ad, isLoading, isError, error } = useAdQuery(id ?? '')
 
-  const { data: ad, isLoading, isError, error } = useAdQuery(id)
+  if (!id) return 'Error id not Found'
 
   if (isError) return error?.message
 

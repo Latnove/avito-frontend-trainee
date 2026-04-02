@@ -31,14 +31,15 @@ export const Input = <T extends FieldValues>({
 }: IInput<T>) => {
   const isRequired = !!rules?.required
 
+  // CR: ай-яй-яй! нарушался Rules of Hooks, хуки используют только внутри компонента, а был в рендер-пропсе
+  const value = useWatch({ control, name })
+
   return (
     <Controller
       name={name}
       control={control}
       rules={rules}
       render={({ field, fieldState }) => {
-        const value = useWatch({ control, name })
-
         const hasValue = value !== undefined && value !== ''
         const isError = !!fieldState.error
         const isWarning = !isRequired && !hasValue
